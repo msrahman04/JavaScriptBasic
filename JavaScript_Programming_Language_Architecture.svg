@@ -1,0 +1,517 @@
+<svg viewBox="0 0 1600 1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f7df1e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f7df1e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="engineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e53e3e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c53030;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="runtimeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#38a169;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2f855a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="featuresGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3182ce;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2c5282;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="ecosystemGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#805ad5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6b46c1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="toolsGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d69e2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b7791f;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1600" height="1200" fill="#1a1a1a"/>
+  
+  <!-- Title -->
+  <rect x="0" y="0" width="1600" height="70" fill="url(#headerGrad)"/>
+  <text x="800" y="40" text-anchor="middle" fill="#000" font-size="32" font-weight="bold">JavaScript Programming Language Architecture</text>
+  
+  <!-- JavaScript Engine Core -->
+  <rect x="20" y="90" width="520" height="300" fill="#2d3748" stroke="#4a5568" stroke-width="3" rx="10"/>
+  <rect x="20" y="90" width="520" height="50" fill="url(#engineGrad)" rx="10 10 0 0"/>
+  <text x="280" y="125" text-anchor="middle" fill="white" font-size="20" font-weight="bold">JavaScript Engine Core</text>
+  
+  <!-- Engine Components -->
+  <text x="40" y="165" fill="#e2e8f0" font-size="14" font-weight="bold">V8 Engine (Chrome/Node.js) Components:</text>
+  
+  <!-- Parser -->
+  <rect x="40" y="180" width="140" height="35" fill="#4299e1" rx="5"/>
+  <text x="110" y="202" text-anchor="middle" fill="white" font-size="11" font-weight="bold">Parser</text>
+  <text x="110" y="213" text-anchor="middle" fill="white" font-size="8">Syntax Analysis</text>
+  
+  <!-- Compiler -->
+  <rect x="200" y="180" width="140" height="35" fill="#48bb78" rx="5"/>
+  <text x="270" y="202" text-anchor="middle" fill="white" font-size="11" font-weight="bold">Compiler</text>
+  <text x="270" y="213" text-anchor="middle" fill="white" font-size="8">Ignition + TurboFan</text>
+  
+  <!-- Memory Management -->
+  <rect x="360" y="180" width="140" height="35" fill="#ed8936" rx="5"/>
+  <text x="430" y="202" text-anchor="middle" fill="white" font-size="11" font-weight="bold">Memory Manager</text>
+  <text x="430" y="213" text-anchor="middle" fill="white" font-size="8">Garbage Collection</text>
+  
+  <!-- Execution Context -->
+  <text x="40" y="240" fill="#e2e8f0" font-size="14" font-weight="bold">Execution Environment:</text>
+  
+  <rect x="40" y="255" width="100" height="30" fill="#805ad5" rx="4"/>
+  <text x="90" y="275" text-anchor="middle" fill="white" font-size="10">Call Stack</text>
+  
+  <rect x="150" y="255" width="100" height="30" fill="#d53f8c" rx="4"/>
+  <text x="200" y="275" text-anchor="middle" fill="white" font-size="10">Heap Memory</text>
+  
+  <rect x="260" y="255" width="120" height="30" fill="#38b2ac" rx="4"/>
+  <text x="320" y="275" text-anchor="middle" fill="white" font-size="10">Execution Context</text>
+  
+  <rect x="390" y="255" width="110" height="30" fill="#667eea" rx="4"/>
+  <text x="445" y="275" text-anchor="middle" fill="white" font-size="10">Scope Chain</text>
+  
+  <!-- Engine Process -->
+  <text x="40" y="310" fill="#e2e8f0" font-size="12" font-weight="bold">Execution Process:</text>
+  <text x="40" y="330" fill="#cbd5e1" font-size="10">1. Source Code → Tokenization → AST → Bytecode → Machine Code</text>
+  <text x="40" y="345" fill="#cbd5e1" font-size="10">2. Optimization: Inline Caching, Hidden Classes, JIT Compilation</text>
+  <text x="40" y="360" fill="#cbd5e1" font-size="10">3. Memory: Mark-and-Sweep GC, Generational Collection</text>
+  
+  <!-- Runtime Environments -->
+  <rect x="560" y="90" width="520" height="300" fill="#2d3748" stroke="#4a5568" stroke-width="3" rx="10"/>
+  <rect x="560" y="90" width="520" height="50" fill="url(#runtimeGrad)" rx="10 10 0 0"/>
+  <text x="820" y="125" text-anchor="middle" fill="white" font-size="20" font-weight="bold">Runtime Environments</text>
+  
+  <!-- Browser Environment -->
+  <rect x="580" y="160" width="230" height="110" fill="#1e293b" stroke="#38a169" stroke-width="2" rx="6"/>
+  <text x="695" y="180" text-anchor="middle" fill="#68d391" font-size="14" font-weight="bold">Browser Environment</text>
+  
+  <rect x="590" y="190" width="80" height="20" fill="#4299e1" rx="3"/>
+  <text x="630" y="204" text-anchor="middle" fill="white" font-size="9">DOM API</text>
+  
+  <rect x="680" y="190" width="80" height="20" fill="#4299e1" rx="3"/>
+  <text x="720" y="204" text-anchor="middle" fill="white" font-size="9">Web APIs</text>
+  
+  <rect x="590" y="220" width="80" height="20" fill="#9f7aea" rx="3"/>
+  <text x="630" y="234" text-anchor="middle" fill="white" font-size="9">Fetch API</text>
+  
+  <rect x="680" y="220" width="80" height="20" fill="#9f7aea" rx="3"/>
+  <text x="720" y="234" text-anchor="middle" fill="white" font-size="9">Storage API</text>
+  
+  <rect x="590" y="250" width="170" height="15" fill="#2d3748" stroke="#68d391" stroke-width="1" rx="3"/>
+  <text x="675" y="261" text-anchor="middle" fill="#e2e8f0" font-size="8">Event Loop + Task Queue</text>
+  
+  <!-- Node.js Environment -->
+  <rect x="830" y="160" width="230" height="110" fill="#1e293b" stroke="#38a169" stroke-width="2" rx="6"/>
+  <text x="945" y="180" text-anchor="middle" fill="#68d391" font-size="14" font-weight="bold">Node.js Environment</text>
+  
+  <rect x="840" y="190" width="80" height="20" fill="#48bb78" rx="3"/>
+  <text x="880" y="204" text-anchor="middle" fill="white" font-size="9">File System</text>
+  
+  <rect x="930" y="190" width="80" height="20" fill="#48bb78" rx="3"/>
+  <text x="970" y="204" text-anchor="middle" fill="white" font-size="9">HTTP Module</text>
+  
+  <rect x="840" y="220" width="80" height="20" fill="#38b2ac" rx="3"/>
+  <text x="880" y="234" text-anchor="middle" fill="white" font-size="9">Process API</text>
+  
+  <rect x="930" y="220" width="80" height="20" fill="#38b2ac" rx="3"/>
+  <text x="970" y="234" text-anchor="middle" fill="white" font-size="9">Crypto Module</text>
+  
+  <rect x="840" y="250" width="170" height="15" fill="#2d3748" stroke="#68d391" stroke-width="1" rx="3"/>
+  <text x="925" y="261" text-anchor="middle" fill="#e2e8f0" font-size="8">libuv + Event Loop</text>
+  
+  <!-- Other Environments -->
+  <text x="580" y="295" fill="#e2e8f0" font-size="12" font-weight="bold">Other Environments:</text>
+  
+  <rect x="580" y="305" width="90" height="20" fill="#6b46c1" rx="3"/>
+  <text x="625" y="318" text-anchor="middle" fill="white" font-size="9">React Native</text>
+  
+  <rect x="680" y="305" width="90" height="20" fill="#6b46c1" rx="3"/>
+  <text x="725" y="318" text-anchor="middle" fill="white" font-size="9">Electron</text>
+  
+  <rect x="780" y="305" width="90" height="20" fill="#6b46c1" rx="3"/>
+  <text x="825" y="318" text-anchor="middle" fill="white" font-size="9">Service Workers</text>
+  
+  <rect x="880" y="305" width="90" height="20" fill="#6b46c1" rx="3"/>
+  <text x="925" y="318" text-anchor="middle" fill="white" font-size="9">Web Workers</text>
+  
+  <rect x="980" y="305" width="80" height="20" fill="#6b46c1" rx="3"/>
+  <text x="1020" y="318" text-anchor="middle" fill="white" font-size="9">Deno</text>
+  
+  <!-- Event Loop and Concurrency -->
+  <rect x="1100" y="90" width="480" height="300" fill="#2d3748" stroke="#4a5568" stroke-width="3" rx="10"/>
+  <rect x="1100" y="90" width="480" height="50" fill="url(#featuresGrad)" rx="10 10 0 0"/>
+  <text x="1340" y="125" text-anchor="middle" fill="white" font-size="20" font-weight="bold">Event Loop and Concurrency</text>
+  
+  <!-- Event Loop Diagram -->
+  <text x="1120" y="165" fill="#e2e8f0" font-size="14" font-weight="bold">Single-Threaded Event Loop:</text>
+  
+  <!-- Call Stack -->
+  <rect x="1120" y="180" width="120" height="60" fill="#e53e3e" rx="5"/>
+  <text x="1180" y="205" text-anchor="middle" fill="white" font-size="12" font-weight="bold">Call Stack</text>
+  <text x="1180" y="220" text-anchor="middle" fill="white" font-size="9">Execution</text>
+  <text x="1180" y="232" text-anchor="middle" fill="white" font-size="9">Context</text>
+  
+  <!-- Web APIs -->
+  <rect x="1260" y="180" width="120" height="60" fill="#38a169" rx="5"/>
+  <text x="1320" y="205" text-anchor="middle" fill="white" font-size="12" font-weight="bold">Web APIs</text>
+  <text x="1320" y="220" text-anchor="middle" fill="white" font-size="9">setTimeout</text>
+  <text x="1320" y="232" text-anchor="middle" fill="white" font-size="9">DOM, HTTP</text>
+  
+  <!-- Task Queue -->
+  <rect x="1400" y="180" width="120" height="60" fill="#805ad5" rx="5"/>
+  <text x="1460" y="205" text-anchor="middle" fill="white" font-size="12" font-weight="bold">Task Queue</text>
+  <text x="1460" y="220" text-anchor="middle" fill="white" font-size="9">Callbacks</text>
+  <text x="1460" y="232" text-anchor="middle" fill="white" font-size="9">Promises</text>
+  
+  <!-- Microtask Queue -->
+  <rect x="1120" y="260" width="160" height="30" fill="#d69e2e" rx="4"/>
+  <text x="1200" y="280" text-anchor="middle" fill="white" font-size="10">Microtask Queue (Promises)</text>
+  
+  <!-- Macrotask Queue -->
+  <rect x="1300" y="260" width="160" height="30" fill="#38b2ac" rx="4"/>
+  <text x="1380" y="280" text-anchor="middle" fill="white" font-size="10">Macrotask Queue (Timers)</text>
+  
+  <!-- Async Patterns -->
+  <text x="1120" y="315" fill="#e2e8f0" font-size="14" font-weight="bold">Asynchronous Patterns:</text>
+  
+  <rect x="1120" y="330" width="80" height="25" fill="#4299e1" rx="3"/>
+  <text x="1160" y="347" text-anchor="middle" fill="white" font-size="9">Callbacks</text>
+  
+  <rect x="1210" y="330" width="80" height="25" fill="#48bb78" rx="3"/>
+  <text x="1250" y="347" text-anchor="middle" fill="white" font-size="9">Promises</text>
+  
+  <rect x="1300" y="330" width="80" height="25" fill="#ed8936" rx="3"/>
+  <text x="1340" y="347" text-anchor="middle" fill="white" font-size="9">Async/Await</text>
+  
+  <rect x="1390" y="330" width="80" height="25" fill="#9f7aea" rx="3"/>
+  <text x="1430" y="347" text-anchor="middle" fill="white" font-size="9">Generators</text>
+  
+  <!-- Language Features -->
+  <rect x="20" y="410" width="780" height="350" fill="#2d3748" stroke="#4a5568" stroke-width="3" rx="10"/>
+  <rect x="20" y="410" width="780" height="50" fill="url(#featuresGrad)" rx="10 10 0 0"/>
+  <text x="410" y="445" text-anchor="middle" fill="white" font-size="20" font-weight="bold">JavaScript Language Features</text>
+  
+  <!-- Core Features -->
+  <text x="40" y="480" fill="#e2e8f0" font-size="14" font-weight="bold">Core Language Features:</text>
+  
+  <!-- Data Types -->
+  <text x="40" y="505" fill="#cbd5e1" font-size="12" font-weight="bold">Data Types:</text>
+  <rect x="40" y="515" width="60" height="20" fill="#4299e1" rx="3"/>
+  <text x="70" y="528" text-anchor="middle" fill="white" font-size="8">String</text>
+  
+  <rect x="110" y="515" width="60" height="20" fill="#4299e1" rx="3"/>
+  <text x="140" y="528" text-anchor="middle" fill="white" font-size="8">Number</text>
+  
+  <rect x="180" y="515" width="60" height="20" fill="#4299e1" rx="3"/>
+  <text x="210" y="528" text-anchor="middle" fill="white" font-size="8">Boolean</text>
+  
+  <rect x="250" y="515" width="60" height="20" fill="#4299e1" rx="3"/>
+  <text x="280" y="528" text-anchor="middle" fill="white" font-size="8">Object</text>
+  
+  <rect x="320" y="515" width="60" height="20" fill="#4299e1" rx="3"/>
+  <text x="350" y="528" text-anchor="middle" fill="white" font-size="8">Array</text>
+  
+  <rect x="390" y="515" width="60" height="20" fill="#4299e1" rx="3"/>
+  <text x="420" y="528" text-anchor="middle" fill="white" font-size="8">Function</text>
+  
+  <rect x="460" y="515" width="60" height="20" fill="#48bb78" rx="3"/>
+  <text x="490" y="528" text-anchor="middle" fill="white" font-size="8">Symbol</text>
+  
+  <rect x="530" y="515" width="60" height="20" fill="#48bb78" rx="3"/>
+  <text x="560" y="528" text-anchor="middle" fill="white" font-size="8">BigInt</text>
+  
+  <!-- ES6+ Features -->
+  <text x="40" y="560" fill="#cbd5e1" font-size="12" font-weight="bold">Modern Features (ES6+):</text>
+  
+  <rect x="40" y="575" width="90" height="22" fill="#38a169" rx="3"/>
+  <text x="85" y="589" text-anchor="middle" fill="white" font-size="9">Arrow Functions</text>
+  
+  <rect x="140" y="575" width="90" height="22" fill="#38a169" rx="3"/>
+  <text x="185" y="589" text-anchor="middle" fill="white" font-size="9">Template Literals</text>
+  
+  <rect x="240" y="575" width="90" height="22" fill="#38a169" rx="3"/>
+  <text x="285" y="589" text-anchor="middle" fill="white" font-size="9">Destructuring</text>
+  
+  <rect x="340" y="575" width="90" height="22" fill="#38a169" rx="3"/>
+  <text x="385" y="589" text-anchor="middle" fill="white" font-size="9">Spread Operator</text>
+  
+  <rect x="440" y="575" width="90" height="22" fill="#805ad5" rx="3"/>
+  <text x="485" y="589" text-anchor="middle" fill="white" font-size="9">Classes</text>
+  
+  <rect x="540" y="575" width="90" height="22" fill="#805ad5" rx="3"/>
+  <text x="585" y="589" text-anchor="middle" fill="white" font-size="9">Modules</text>
+  
+  <rect x="640" y="575" width="90" height="22" fill="#805ad5" rx="3"/>
+  <text x="685" y="589" text-anchor="middle" fill="white" font-size="9">Promises</text>
+  
+  <!-- Object-Oriented Features -->
+  <text x="40" y="620" fill="#cbd5e1" font-size="12" font-weight="bold">Object-Oriented Programming:</text>
+  
+  <rect x="40" y="635" width="100" height="20" fill="#d69e2e" rx="3"/>
+  <text x="90" y="648" text-anchor="middle" fill="white" font-size="9">Prototypes</text>
+  
+  <rect x="150" y="635" width="100" height="20" fill="#d69e2e" rx="3"/>
+  <text x="200" y="648" text-anchor="middle" fill="white" font-size="9">Inheritance</text>
+  
+  <rect x="260" y="635" width="100" height="20" fill="#d69e2e" rx="3"/>
+  <text x="310" y="648" text-anchor="middle" fill="white" font-size="9">Encapsulation</text>
+  
+  <rect x="370" y="635" width="100" height="20" fill="#d69e2e" rx="3"/>
+  <text x="420" y="648" text-anchor="middle" fill="white" font-size="9">Polymorphism</text>
+  
+  <!-- Functional Programming -->
+  <text x="40" y="680" fill="#cbd5e1" font-size="12" font-weight="bold">Functional Programming:</text>
+  
+  <rect x="40" y="695" width="90" height="20" fill="#38b2ac" rx="3"/>
+  <text x="85" y="708" text-anchor="middle" fill="white" font-size="9">Higher-Order</text>
+  
+  <rect x="140" y="695" width="90" height="20" fill="#38b2ac" rx="3"/>
+  <text x="185" y="708" text-anchor="middle" fill="white" font-size="9">Closures</text>
+  
+  <rect x="240" y="695" width="90" height="20" fill="#38b2ac" rx="3"/>
+  <text x="285" y="708" text-anchor="middle" fill="white" font-size="9">Pure Functions</text>
+  
+  <rect x="340" y="695" width="90" height="20" fill="#38b2ac" rx="3"/>
+  <text x="385" y="708" text-anchor="middle" fill="white" font-size="9">Immutability</text>
+  
+  <!-- Error Handling -->
+  <text x="480" y="620" fill="#cbd5e1" font-size="12" font-weight="bold">Error Handling:</text>
+  
+  <rect x="480" y="635" width="80" height="20" fill="#e53e3e" rx="3"/>
+  <text x="520" y="648" text-anchor="middle" fill="white" font-size="9">try/catch</text>
+  
+  <rect x="570" y="635" width="80" height="20" fill="#e53e3e" rx="3"/>
+  <text x="610" y="648" text-anchor="middle" fill="white" font-size="9">throw</text>
+  
+  <rect x="660" y="635" width="80" height="20" fill="#e53e3e" rx="3"/>
+  <text x="700" y="648" text-anchor="middle" fill="white" font-size="9">finally</text>
+  
+  <!-- Advanced Concepts -->
+  <text x="480" y="680" fill="#cbd5e1" font-size="12" font-weight="bold">Advanced Concepts:</text>
+  
+  <rect x="480" y="695" width="90" height="20" fill="#9f7aea" rx="3"/>
+  <text x="525" y="708" text-anchor="middle" fill="white" font-size="9">Event Delegation</text>
+  
+  <rect x="580" y="695" width="90" height="20" fill="#9f7aea" rx="3"/>
+  <text x="625" y="708" text-anchor="middle" fill="white" font-size="9">Hoisting</text>
+  
+  <rect x="680" y="695" width="90" height="20" fill="#9f7aea" rx="3"/>
+  <text x="725" y="708" text-anchor="middle" fill="white" font-size="9">Context (this)</text>
+  
+  <!-- Code Examples -->
+  <text x="40" y="735" fill="#e2e8f0" font-size="12" font-weight="bold">Modern JavaScript Syntax Examples:</text>
+  <text x="40" y="750" fill="#68d391" font-size="10" font-family="monospace">const fetchData = async (url) =&gt; await fetch(url).then(res =&gt; res.json());</text>
+  
+  <!-- Ecosystem -->
+  <rect x="820" y="410" width="760" height="350" fill="#2d3748" stroke="#4a5568" stroke-width="3" rx="10"/>
+  <rect x="820" y="410" width="760" height="50" fill="url(#ecosystemGrad)" rx="10 10 0 0"/>
+  <text x="1200" y="445" text-anchor="middle" fill="white" font-size="20" font-weight="bold">JavaScript Ecosystem</text>
+  
+  <!-- Package Management -->
+  <text x="840" y="480" fill="#e2e8f0" font-size="14" font-weight="bold">Package Management:</text>
+  
+  <rect x="840" y="495" width="80" height="25" fill="#cb3837" rx="4"/>
+  <text x="880" y="512" text-anchor="middle" fill="white" font-size="10">npm</text>
+  
+  <rect x="930" y="495" width="80" height="25" fill="#2188ff" rx="4"/>
+  <text x="970" y="512" text-anchor="middle" fill="white" font-size="10">yarn</text>
+  
+  <rect x="1020" y="495" width="80" height="25" fill="#f69220" rx="4"/>
+  <text x="1060" y="512" text-anchor="middle" fill="white" font-size="10">pnpm</text>
+  
+  <rect x="1110" y="495" width="80" height="25" fill="#00d8ff" rx="4"/>
+  <text x="1150" y="512" text-anchor="middle" fill="white" font-size="10">Deno</text>
+  
+  <!-- Frameworks -->
+  <text x="840" y="545" fill="#e2e8f0" font-size="14" font-weight="bold">Frameworks and Libraries:</text>
+  
+  <!-- Frontend -->
+  <text x="840" y="565" fill="#cbd5e1" font-size="12" font-weight="bold">Frontend:</text>
+  <rect x="840" y="575" width="70" height="20" fill="#61dafb" rx="3"/>
+  <text x="875" y="588" text-anchor="middle" fill="black" font-size="8">React</text>
+  
+  <rect x="920" y="575" width="70" height="20" fill="#4fc08d" rx="3"/>
+  <text x="955" y="588" text-anchor="middle" fill="white" font-size="8">Vue.js</text>
+  
+  <rect x="1000" y="575" width="70" height="20" fill="#dd0031" rx="3"/>
+  <text x="1035" y="588" text-anchor="middle" fill="white" font-size="8">Angular</text>
+  
+  <rect x="1080" y="575" width="70" height="20" fill="#ff3e00" rx="3"/>
+  <text x="1115" y="588" text-anchor="middle" fill="white" font-size="8">Svelte</text>
+  
+  <!-- Backend -->
+  <text x="840" y="610" fill="#cbd5e1" font-size="12" font-weight="bold">Backend:</text>
+  <rect x="840" y="620" width="70" height="20" fill="#68a063" rx="3"/>
+  <text x="875" y="633" text-anchor="middle" fill="white" font-size="8">Node.js</text>
+  
+  <rect x="920" y="620" width="70" height="20" fill="#000" rx="3"/>
+  <text x="955" y="633" text-anchor="middle" fill="white" font-size="8">Express</text>
+  
+  <rect x="1000" y="620" width="70" height="20" fill="#7c3aed" rx="3"/>
+  <text x="1035" y="633" text-anchor="middle" fill="white" font-size="8">Fastify</text>
+  
+  <rect x="1080" y="620" width="70" height="20" fill="#000" rx="3"/>
+  <text x="1115" y="633" text-anchor="middle" fill="white" font-size="8">Next.js</text>
+  
+  <!-- Testing -->
+  <text x="1250" y="565" fill="#cbd5e1" font-size="12" font-weight="bold">Testing:</text>
+  <rect x="1250" y="575" width="70" height="20" fill="#c21325" rx="3"/>
+  <text x="1285" y="588" text-anchor="middle" fill="white" font-size="8">Jest</text>
+  
+  <rect x="1330" y="575" width="70" height="20" fill="#69d3a7" rx="3"/>
+  <text x="1365" y="588" text-anchor="middle" fill="white" font-size="8">Vitest</text>
+  
+  <rect x="1410" y="575" width="70" height="20" fill="#17202c" rx="3"/>
+  <text x="1445" y="588" text-anchor="middle" fill="white" font-size="8">Cypress</text>
+  
+  <rect x="1490" y="575" width="70" height="20" fill="#e2e2e2" rx="3"/>
+  <text x="1525" y="588" text-anchor="middle" fill="black" font-size="8">Playwright</text>
+  
+  <!-- Build Tools -->
+  <text x="1250" y="610" fill="#cbd5e1" font-size="12" font-weight="bold">Build Tools:</text>
+  <rect x="1250" y="620" width="70" height="20" fill="#8dd6f9" rx="3"/>
+  <text x="1285" y="633" text-anchor="middle" fill="black" font-size="8">Webpack</text>
+  
+  <rect x="1330" y="620" width="70" height="20" fill="#646cff" rx="3"/>
+  <text x="1365" y="633" text-anchor="middle" fill="white" font-size="8">Vite</text>
+  
+  <rect x="1410" y="620" width="70" height="20" fill="#db4c40" rx="3"/>
+  <text x="1445" y="633" text-anchor="middle" fill="white" font-size="8">Rollup</text>
+  
+  <rect x="1490" y="620" width="70" height="20" fill="#f7931e" rx="3"/>
+  <text x="1525" y="633" text-anchor="middle" fill="white" font-size="8">Parcel</text>
+  
+  <!-- Utilities -->
+  <text x="840" y="655" fill="#cbd5e1" font-size="12" font-weight="bold">Utility Libraries:</text>
+  <rect x="840" y="665" width="70" height="18" fill="#3492ff" rx="3"/>
+  <text x="875" y="677" text-anchor="middle" fill="white" font-size="8">Lodash</text>
+  
+  <rect x="920" y="665" width="70" height="18" fill="#f0db4f" rx="3"/>
+  <text x="955" y="677" text-anchor="middle" fill="black" font-size="8">Moment.js</text>
+  
+  <rect x="1000" y="665" width="70" height="18" fill="#ff6b6b" rx="3"/>
+  <text x="1035" y="677" text-anchor="middle" fill="white" font-size="8">Axios</text>
+  
+  <rect x="1080" y="665" width="70" height="18" fill="#764abc" rx="3"/>
+  <text x="1115" y="677" text-anchor="middle" fill="white" font-size="8">Redux</text>
+  
+  <!-- State Management -->
+  <text x="1250" y="655" fill="#cbd5e1" font-size="12" font-weight="bold">State Management:</text>
+  <rect x="1250" y="665" width="70" height="18" fill="#764abc" rx="3"/>
+  <text x="1285" y="677" text-anchor="middle" fill="white" font-size="8">Redux</text>
+  
+  <rect x="1330" y="665" width="70" height="18" fill="#ff6b6b" rx="3"/>
+  <text x="1365" y="677" text-anchor="middle" fill="white" font-size="8">Zustand</text>
+  
+  <rect x="1410" y="665" width="70" height="18" fill="#5a67d8" rx="3"/>
+  <text x="1445" y="677" text-anchor="middle" fill="white" font-size="8">MobX</text>
+  
+  <rect x="1490" y="665" width="70" height="18" fill="#00d8ff" rx="3"/>
+  <text x="1525" y="677" text-anchor="middle" fill="white" font-size="8">Recoil</text>
+  
+  <!-- Performance -->
+  <text x="840" y="700" fill="#e2e8f0" font-size="14" font-weight="bold">Performance and Optimization:</text>
+  <text x="840" y="720" fill="#cbd5e1" font-size="10">Code Splitting, Tree Shaking, Minification, Bundle Analysis</text>
+  <text x="840" y="735" fill="#cbd5e1" font-size="10">Lazy Loading, Memoization, Virtual DOM, Service Workers</text>
+  
+  <!-- Development Tools -->
+  <rect x="20" y="780" width="1560" height="180" fill="#2d3748" stroke="#4a5568" stroke-width="3" rx="10"/>
+  <rect x="20" y="780" width="1560" height="50" fill="url(#toolsGrad)" rx="10 10 0 0"/>
+  <text x="800" y="815" text-anchor="middle" fill="white" font-size="20" font-weight="bold">Development Tools and Debugging</text>
+  
+  <!-- Browser DevTools -->
+  <text x="40" y="850" fill="#e2e8f0" font-size="14" font-weight="bold">Browser Developer Tools:</text>
+  
+  <rect x="40" y="865" width="100" height="25" fill="#4285f4" rx="4"/>
+  <text x="90" y="882" text-anchor="middle" fill="white" font-size="9">Chrome DevTools</text>
+  
+  <rect x="150" y="865" width="100" height="25" fill="#ff9500" rx="4"/>
+  <text x="200" y="882" text-anchor="middle" fill="white" font-size="9">Firefox DevTools</text>
+  
+  <rect x="260" y="865" width="100" height="25" fill="#1976d2" rx="4"/>
+  <text x="310" y="882" text-anchor="middle" fill="white" font-size="9">Safari DevTools</text>
+  
+  <!-- Code Editors -->
+  <text x="400" y="850" fill="#e2e8f0" font-size="14" font-weight="bold">Code Editors and IDEs:</text>
+  
+  <rect x="400" y="865" width="80" height="25" fill="#007acc" rx="4"/>
+  <text x="440" y="882" text-anchor="middle" fill="white" font-size="9">VS Code</text>
+  
+  <rect x="490" y="865" width="80" height="25" fill="#000" rx="4"/>
+  <text x="530" y="882" text-anchor="middle" fill="white" font-size="9">WebStorm</text>
+  
+  <rect x="580" y="865" width="80" height="25" fill="#6c7b7f" rx="4"/>
+  <text x="620" y="882" text-anchor="middle" fill="white" font-size="9">Sublime</text>
+  
+  <!-- Linting -->
+  <text x="700" y="850" fill="#e2e8f0" font-size="14" font-weight="bold">Code Quality:</text>
+  
+  <rect x="700" y="865" width="80" height="25" fill="#4b32c3" rx="4"/>
+  <text x="740" y="882" text-anchor="middle" fill="white" font-size="9">ESLint</text>
+  
+  <rect x="790" y="865" width="80" height="25" fill="#f7b93e" rx="4"/>
+  <text x="830" y="882" text-anchor="middle" fill="white" font-size="9">Prettier</text>
+  
+  <rect x="880" y="865" width="80" height="25" fill="#3178c6" rx="4"/>
+  <text x="920" y="882" text-anchor="middle" fill="white" font-size="9">TypeScript</text>
+  
+  <!-- Version Control -->
+  <text x="1000" y="850" fill="#e2e8f0" font-size="14" font-weight="bold">Version Control:</text>
+  
+  <rect x="1000" y="865" width="80" height="25" fill="#f05032" rx="4"/>
+  <text x="1040" y="882" text-anchor="middle" fill="white" font-size="9">Git</text>
+  
+  <rect x="1090" y="865" width="80" height="25" fill="#181717" rx="4"/>
+  <text x="1130" y="882" text-anchor="middle" fill="white" font-size="9">GitHub</text>
+  
+  <rect x="1180" y="865" width="80" height="25" fill="#fc6d26" rx="4"/>
+  <text x="1220" y="882" text-anchor="middle" fill="white" font-size="9">GitLab</text>
+  
+  <!-- Debugging Tools -->
+  <text x="1300" y="850" fill="#e2e8f0" font-size="14" font-weight="bold">Debugging:</text>
+  
+  <rect x="1300" y="865" width="80" height="25" fill="#362d59" rx="4"/>
+  <text x="1340" y="882" text-anchor="middle" fill="white" font-size="9">Sentry</text>
+  
+  <rect x="1390" y="865" width="80" height="25" fill="#764abc" rx="4"/>
+  <text x="1430" y="882" text-anchor="middle" fill="white" font-size="9">LogRocket</text>
+  
+  <rect x="1480" y="865" width="80" height="25" fill="#ff6154" rx="4"/>
+  <text x="1520" y="882" text-anchor="middle" fill="white" font-size="9">Bugsnag</text>
+  
+  <!-- Debugging Features -->
+  <text x="40" y="915" fill="#cbd5e1" font-size="12" font-weight="bold">Debugging Features:</text>
+  <text x="40" y="935" fill="#e2e8f0" font-size="10">Breakpoints, Call Stack, Watch Variables, Console Logging, Network Monitoring</text>
+  <text x="40" y="950" fill="#e2e8f0" font-size="10">Source Maps, Performance Profiling, Memory Analysis, Error Tracking</text>
+  
+  <!-- Data Flow Arrows -->
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#68d391"/>
+    </marker>
+  </defs>
+  
+  <!-- Arrows -->
+  <line x1="540" y1="240" x2="580" y2="240" stroke="#68d391" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="1080" y1="240" x2="1120" y2="240" stroke="#68d391" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="410" y1="390" x2="410" y2="410" stroke="#68d391" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="1200" y1="390" x2="1200" y2="410" stroke="#68d391" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="800" y1="580" x2="800" y2="760" stroke="#68d391" stroke-width="3" marker-end="url(#arrow)"/>
+  
+  <!-- Summary -->
+  <rect x="20" y="980" width="1560" height="200" fill="#1a202c" stroke="#2d3748" stroke-width="2" rx="8"/>
+  <text x="800" y="1010" text-anchor="middle" fill="#f7df1e" font-size="18" font-weight="bold">JavaScript Execution Flow Summary</text>
+  
+  <text x="40" y="1040" fill="#e2e8f0" font-size="12" font-weight="bold">1. Source Code Processing:</text>
+  <text x="40" y="1055" fill="#cbd5e1" font-size="10">Source Code → Tokenizer → Parser → AST → Bytecode → Optimized Machine Code</text>
+  
+  <text x="40" y="1080" fill="#e2e8f0" font-size="12" font-weight="bold">2. Runtime Execution:</text>
+  <text x="40" y="1095" fill="#cbd5e1" font-size="10">Call Stack → Execution Context → Memory Allocation → Garbage Collection</text>
+  
+  <text x="40" y="1120" fill="#e2e8f0" font-size="12" font-weight="bold">3. Asynchronous Operations:</text>
+  <text x="40" y="1135" fill="#cbd5e1" font-size="10">Event Loop → Web APIs → Task Queue → Microtask Queue → Callback Execution</text>
+  
+  <text x="40" y="1160" fill="#e2e8f0" font-size="12" font-weight="bold">4. Development Process:</text>
+  <text x="40" y="1175" fill="#cbd5e1" font-size="10">Write Code → Lint/Format → Bundle/Transpile → Test → Debug → Deploy</text>
+</svg>
